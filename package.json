@@ -1,0 +1,19 @@
+{
+  "name": "compasscar",
+  "version": "1.0.0",
+  "description": "API responsible for the backend management of the CompassCar car rental company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js locahost 3000"
+  },
+  "author": "Rogerio Aparecido Cordeiro da Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql": "^2.18.1"
+  }
+}
