@@ -1,12 +1,15 @@
-const connection = require("../config/database")
+const { conn } = require("../config/database");
 
-const { createCar } = require("../controller/carController");
-
-const car = {
+const Car = {
     create: (data, callback) => {
-        connection.query('INSERT INTO cars SET ?', data, (err, result) => {
-            if (err) throw err;
-            callback(result)
-        })
+        conn.query('INSERT INTO cars SET ?', data, (err, result) => {
+            if (err) {
+                console.log('Error: ', err.message);
+                return callback(err);
+            }
+            callback(null, result);
+        });
     }
-}
+};
+
+module.exports = Car;
