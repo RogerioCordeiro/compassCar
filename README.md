@@ -37,6 +37,7 @@ Siga os passos abaixo para utilizar a aplicação em sua máquina local:
 3. **Configure o banco de dados**:
 
    - Certifique-se de que o MySQL está instalado e em execução.
+   - Altere as credenciais no .env com as credenciais do seu banco de dados. O **host**, **user** e **password**.
 
 4. **Inicie a aplicação**:
 
