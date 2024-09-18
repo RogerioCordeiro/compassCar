@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js locahost 3000"
+    "start": "nodemon app.js locahost 3000"
   },
   "author": "Rogerio Aparecido Cordeiro da Silva",
   "license": "ISC",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "express": "^4.19.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "mysql2": "^3.11.1"
   }
 }
